@@ -4,7 +4,7 @@ Description=daphne daemon
 [Service]
 User=ubuntu
 Group=ubuntu
-WorkingDirectory = /home/ubunut/chat/chat/
+WorkingDirectory=/home/ubunut/chat/chat/
 
 Environment="DJANGO_SETTINGS_MODULE=mysite.settings"
 ExecStart=/home/ubuntu/chat/venv/bin/daphne -b 0.0.0.0 -p 8080 mysite.asgi:application
