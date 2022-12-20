@@ -3,7 +3,7 @@ Description=uWSGI service
 After=syslog.target
 
 [Service]
-ExecStart=/home/ubuntu/venv/bin/uwsgi -i /home/ubuntu/chat/chat/.config/uwsgi/chat.ini
+ExecStart=/home/ubuntu/chat/venv/bin/uwsgi -i /home/ubuntu/chat/chat/.config/uwsgi/chat.ini
 
 Restart=always
 KillSignal=SIGQUIT
